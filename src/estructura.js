@@ -1,1 +1,1 @@
-d
+const rsult=sds
