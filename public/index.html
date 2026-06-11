@@ -1,41 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Edupuente - Registro</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Básico</title>
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
-  <div class="card">
-    <div class="brand">
-      <h1>Edupuente</h1>
-      <p>Crea tu cuenta</p>
+    <input type="checkbox" id="modal-toggle">
+    <label for="modal-toggle" class="open-btn">☰ Menú</label>
+    
+    <div class="modal">
+        <div class="modal-header">
+            <h2>Panel</h2>
+            <label for="modal-toggle" class="close-btn">&times;</label>
+        </div>
+        
+        <a href="login.html" class="modal-link">Iniciar Sesión</a>
+        <a href="register.html" class="modal-link">Registrarse</a>
     </div>
 
-    <form action="#" method="POST" onsubmit="return false;">
-      <div class="form-group">
-        <label for="usuario">Usuario</label>
-        <input type="text" id="usuario" name="usuario" placeholder="Nombre de usuario" required>
-      </div>
-
-      <div class="form-group">
-        <label for="correo">Correo electrónico</label>
-        <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
-      </div>
-
-      <div class="form-group">
-        <label for="clave">Contraseña</label>
-        <input type="password" id="clave" name="clave" placeholder="Mínimo 6 caracteres" required minlength="6">
-      </div>
-
-      <button type="submit" class="btn">Registrarse</button>
-    </form>
-
-    <div class="footer">
-      ¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a>
-    </div>
-
-  </div>
+    <main class="main-content">
+        <h1>Bienvenido</h1>
+        <p>Este es un home básico con HTML y CSS.</p>
+        <p>Haz click en el botón "Menú" para abrir la ventana emergente.</p>
+    </main>
 </body>
 </html>
